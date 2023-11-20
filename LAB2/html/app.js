@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
-        .red{
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <p id ="title">HEllo Docker !!</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="./app.js"></script>
-</body>
-</html>
-
-<script>
     var num = 10;
     let name = "apec";
     age = 20;
@@ -55,4 +35,4 @@ console.log(dataJson.employee[0].name);
         .html(msg + " jQuery")
         .addClass('red')
     });
-</script>
+
