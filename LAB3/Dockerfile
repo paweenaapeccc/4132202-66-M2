@@ -1,4 +1,4 @@
-FROM php:7.4.33-zts-alpine
-RUN docker-php-ext-install mysqli
+#Dockerfile
 
-EXPOSE 80
+FROM php:7.4.33-apache
+RUN docker-php-ext-install mysqli

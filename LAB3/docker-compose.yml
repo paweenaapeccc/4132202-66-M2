@@ -2,16 +2,17 @@ version: "2"
 services:
   web:
     build: .
-    container_name: web_service
     ports:
       - 8000:80
     volumes:
-      - ./html:/var/www/html/
+      - ./html/:/var/www/html/
     depends_on:
-      - "db"
+      - db
   db:
     image: mysql:5.7.44
+    volumes:
+      - ./mysql:/var/lib/mysql
     ports:
-      - 3303:3306
+      - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: 1234
