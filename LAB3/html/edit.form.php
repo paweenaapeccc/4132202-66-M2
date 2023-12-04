@@ -33,6 +33,7 @@ $row = mysqli_fetch_assoc($result);
                         alert("Can't insert data.")
                     else
                         $("#tb_member").load("/listItem.php")
+                        $('#staticBackdrop').modal('hide');
                 }
             });
         });

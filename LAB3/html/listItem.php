@@ -78,3 +78,4 @@ $result = mysqli_query($conn, $sql);
 
 
     }); //jQuery Ready
+</script>

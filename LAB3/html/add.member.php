@@ -5,7 +5,9 @@ $id = $_POST['id'];
 $name = $_POST['name'];
 $email = $_POST['email'];
 
-$sql = "INSERT INTO tb_member VALUES('$id','$name','$email')";
+$sql = "UPDATE tb_member 
+        SET member_name='$name',member_email='$email' 
+        WHERE id_member='$id' ";
 
 try {
     mysqli_query($conn, $sql);
